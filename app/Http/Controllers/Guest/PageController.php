@@ -19,10 +19,7 @@ class PageController extends Controller
         return view('home', compact('comics', 'list', 'list_2', 'list_3'));
     }
 
-
-
-
-
+    
     public function show($id){
         // recupero l'id dalla tabella
         $comics =Comic::find($id);
