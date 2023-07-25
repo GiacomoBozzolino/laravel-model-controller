@@ -18,4 +18,18 @@ class PageController extends Controller
       
         return view('home', compact('comics', 'list', 'list_2', 'list_3'));
     }
+
+
+
+
+
+    public function show($id){
+        // recupero l'id dalla tabella
+        $comics =Comic::find($id);
+        $list= config('db-footer.comics');
+        $list_2= config('db-footer.info');
+        $list_3= config('db-footer.sites');
+      
+        return view('comic.show', compact('comics', 'list', 'list_2', 'list_3'));
+    }
 }

@@ -18,3 +18,4 @@ use App\Http\Controllers\Guest\PageController as PageController;
 // });
 
 Route::get('/', [PageController::class, 'index']) ->name('homepage');
+Route::get('/comic/{id}', [PageController::class, 'show']) ->name('comic.show');
