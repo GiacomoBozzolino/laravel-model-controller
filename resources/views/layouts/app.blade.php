@@ -22,7 +22,7 @@
         @yield('content')
         
          {{-- inizio footer --}}
-        {{-- @include('partials.footer') --}}
+        @include('partials.footer')
 
     </body>
 
